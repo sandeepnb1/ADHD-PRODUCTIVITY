@@ -1,0 +1,349 @@
+
+Text ->  i saw a lion suddenly
+Predicted emotion ->  sadness
+Confidence rate -> 60.140525920544576
+
+Text ->  I suddenly saw a snake and screamed aloud
+Predicted emotion ->  fear
+Confidence rate -> 63.98324559936789
+
+Text ->  I suddenly saw a snake and screamed aloud
+Predicted emotion ->  fear
+Confidence rate -> 63.98324559936789
+
+Text ->  HAPPY
+Predicted emotion ->  joy
+Confidence rate -> 90.0
+
+Text ->  HAPPY
+Predicted emotion ->  joy
+Confidence rate -> 90.0
+
+Text ->  I suddenly saw a snake and screamed aloud
+Predicted emotion ->  fear
+Confidence rate -> 63.98324559936789
+
+Text ->  I suddenly saw a snake and screamed aloud
+Predicted emotion ->  fear
+Confidence rate -> 63.98324559936789
+
+Text ->  I suddenly saw a snake and screamed aloud
+Predicted emotion ->  fear
+Confidence rate -> 63.98324559936789
+
+Text ->  HAPPY
+Predicted emotion ->  joy
+Confidence rate -> 90.0
+
+Text ->  I suddenly saw a snake and screamed aloud
+Predicted emotion ->  fear
+Confidence rate -> 63.98324559936789
+
+Text ->  I suddenly saw a snake and screamed aloud
+Predicted emotion ->  fear
+Confidence rate -> 63.98324559936789
+
+Text ->  Alas, I missed the bus
+Predicted emotion ->  sadness
+Confidence rate -> 90.0
+
+Text ->  I am really excited to go to beach today
+Predicted emotion ->  joy
+Confidence rate -> 89.07548863644502
+
+Text ->  I don't know how to express my feeling when she is around me
+Predicted emotion ->  sadness
+Confidence rate -> 50.0
+
+Text ->  I am shocked to see him and I am really happy about it
+Predicted emotion ->  surprise
+Confidence rate -> 70.0
+
+Text ->  Alas, I missed the bus
+Predicted emotion ->  sadness
+Confidence rate -> 90.0
+
+Text ->  Alas, I missed the bus but I am glad that I can spend extra time with my friend happily
+Predicted emotion ->  joy
+Confidence rate -> 80.4906956059082
+
+Text ->  I am feeling lucky today
+Predicted emotion ->  joy
+Confidence rate -> 87.28947892017806
+
+Text ->  Alas, I missed the bus, but I'm glad that I can spend some time with my friends
+Predicted emotion ->  joy
+Confidence rate -> 62.23077807815047
+
+Text ->  I am glad that I made it till this far, but at the same time, I am afraid to move on from here
+Predicted emotion ->  joy
+Confidence rate -> 76.75797519561549
+
+Text ->  I'm feeling sad right now!
+Predicted emotion ->  sadness
+Confidence rate -> 90.0
+
+Text ->  It is really exciting for me to go to the zoo today
+Predicted emotion ->  joy
+Confidence rate -> 80.24329200020945
+
+Text ->  I suddenly saw a snake and screamed aloud
+Predicted emotion ->  fear
+Confidence rate -> 63.98324559936789
+
+Text ->  I'm feeling sad right now!
+Predicted emotion ->  sadness
+Confidence rate -> 90.0
+
+Text ->  I went to the park.
+Predicted emotion ->  joy
+Confidence rate -> 60.0
+
+Text ->  I went to the park.
+Predicted emotion ->  joy
+Confidence rate -> 60.0
+
+Text ->  I went to the park.
+Predicted emotion ->  joy
+Confidence rate -> 60.0
+
+Text ->  I went to the park.
+Predicted emotion ->  joy
+Confidence rate -> 60.0
+
+Text ->  I woke up early in the morning and ate cucumbers for breakfast. i fell into the pond and got wet
+Predicted emotion ->  sadness
+Confidence rate -> 94.17620125068254
+
+Text ->  I woke up early in the morning and ate cucumbers for breakfast. i fell into the pond and got wet
+Predicted emotion ->  sadness
+Confidence rate -> 94.17620125068254
+
+Text ->  I woke up early in the morning and ate cucumbers for breakfast. i fell into the pond and got wet
+Predicted emotion ->  sadness
+Confidence rate -> 94.17620125068254
+
+Text ->  I woke up early in the morning and ate cucumbers for breakfast. i fell into the pond and got wet
+Predicted emotion ->  sadness
+Confidence rate -> 94.17620125068254
+
+Text ->  I woke up early in the morning and ate cucumbers for breakfast. i fell into the pond and got wet
+Predicted emotion ->  sadness
+Confidence rate -> 94.17620125068254
+
+Text ->  I woke up early in the morning and ate cucumbers for breakfast. i fell into the pond and got wet
+Predicted emotion ->  sadness
+Confidence rate -> 94.17620125068254
+
+Text ->  I woke up early in the morning and ate cucumbers for breakfast. i fell into the pond and got wet
+Predicted emotion ->  sadness
+Confidence rate -> 94.17620125068254
+
+Text ->  I woke up early in the morning and ate cucumbers for breakfast. i fell into the pond and got wet
+Predicted emotion ->  sadness
+Confidence rate -> 94.17620125068254
+
+Text ->  I woke up early in the morning and ate cucumbers for breakfast. i fell into the pond and got wet
+Predicted emotion ->  sadness
+Confidence rate -> 94.17620125068254
+
+Text ->  I woke up early in the morning and ate cucumbers for breakfast. i fell into the pond and got wet
+Predicted emotion ->  sadness
+Confidence rate -> 94.17620125068254
+
+Text ->  I woke up early in the morning and ate cucumbers for breakfast. i fell into the pond and got wet
+Predicted emotion ->  sadness
+Confidence rate -> 94.17620125068254
+
+Text ->  I went to the park.
+Predicted emotion ->  joy
+Confidence rate -> 60.0
+
+Text ->  I woke up early in the morning and ate cucumbers for breakfast. i fell into the pond and got wet
+Predicted emotion ->  sadness
+Confidence rate -> 94.17620125068254
+
+Text ->  I went to the park.
+Predicted emotion ->  joy
+Confidence rate -> 60.0
+
+Text ->  I woke up early in the morning and ate cucumbers for breakfast. i fell into the pond and got wet
+Predicted emotion ->  sadness
+Confidence rate -> 94.17620125068254
+
+Text ->  I woke up early in the morning and ate cucumbers for breakfast. i fell into the pond and got wet
+Predicted emotion ->  sadness
+Confidence rate -> 94.17620125068254
+
+Text ->  I woke up early in the morning and ate cucumbers for breakfast. i fell into the pond and got wet
+Predicted emotion ->  sadness
+Confidence rate -> 94.17620125068254
+
+Text ->  I woke up early in the morning and ate cucumbers for breakfast. i fell into the pond and got wet
+Predicted emotion ->  sadness
+Confidence rate -> 94.17620125068254
+
+Text ->  I got praised by my teacher as i had the highest marks in the school
+Predicted emotion ->  anger
+Confidence rate -> 60.0
+
+Text ->  I got praised by my teacher as i had the highest marks in the school
+Predicted emotion ->  anger
+Confidence rate -> 60.0
+
+Text ->  I got praised by my teacher as i had the highest marks in the school
+Predicted emotion ->  anger
+Confidence rate -> 60.0
+
+Text ->  I got praised by my teacher as i had the highest marks in the school
+Predicted emotion ->  anger
+Confidence rate -> 60.0
+
+Text ->  I got praised by my teacher as i had the highest marks in the school
+Predicted emotion ->  anger
+Confidence rate -> 60.0
+
+Text ->  I got praised by my teacher as i had the highest marks in the school
+Predicted emotion ->  anger
+Confidence rate -> 60.0
+
+Text ->  I got praised by my teacher as i had the highest marks in the school
+Predicted emotion ->  anger
+Confidence rate -> 60.0
+
+Text ->  I got praised by my teacher as i had the highest marks in the school
+Predicted emotion ->  anger
+Confidence rate -> 60.0
+
+Text ->  I got praised by my teacher as i had the highest marks in the school
+Predicted emotion ->  anger
+Confidence rate -> 60.0
+
+Text ->  I woke up early today and was vert productive
+Predicted emotion ->  joy
+Confidence rate -> 97.17438911009434
+
+Text ->  I woke up early today and was vert productive
+Predicted emotion ->  joy
+Confidence rate -> 97.17438911009434
+
+Text ->  I woke up early today and was very productive
+Predicted emotion ->  joy
+Confidence rate -> 97.17438911009434
+
+Text ->  I woke up early today and was very productive
+Predicted emotion ->  joy
+Confidence rate -> 97.17438911009434
+
+Text ->  
+Predicted emotion ->  anger
+Confidence rate -> 40.0
+
+Text ->  I got praised by my teacher as i had the highest marks in the school
+Predicted emotion ->  anger
+Confidence rate -> 60.0
+
+Text ->  I got praised by my teacher as i had the highest marks in the school
+Predicted emotion ->  anger
+Confidence rate -> 60.0
+
+Text ->  I woke up early today and was vert productive
+Predicted emotion ->  joy
+Confidence rate -> 97.17438911009434
+
+Text ->  I woke up early today and was vert productive
+Predicted emotion ->  joy
+Confidence rate -> 97.17438911009434
+
+Text ->  I woke up early today and was very productive
+Predicted emotion ->  joy
+Confidence rate -> 97.17438911009434
+
+Text ->  I woke up early today and was very productive
+Predicted emotion ->  joy
+Confidence rate -> 97.17438911009434
+
+Text ->  I woke up early today and was very productive
+Predicted emotion ->  joy
+Confidence rate -> 97.17438911009434
+
+Text ->  I woke up early today and was very productive
+Predicted emotion ->  joy
+Confidence rate -> 97.17438911009434
+
+Text ->  I woke up early today and was very productive
+Predicted emotion ->  joy
+Confidence rate -> 97.17438911009434
+
+Text ->  I woke up early today and was vert productive
+Predicted emotion ->  joy
+Confidence rate -> 97.17438911009434
+
+Text ->  I woke up early today and was very productive
+Predicted emotion ->  joy
+Confidence rate -> 97.17438911009434
+
+Text ->  I woke up early today and was vert productive
+Predicted emotion ->  joy
+Confidence rate -> 97.17438911009434
+
+Text ->  I woke up early today and was vert productive
+Predicted emotion ->  joy
+Confidence rate -> 97.17438911009434
+
+Text ->  I got furious at my PG owner for not letting my friend in
+Predicted emotion ->  anger
+Confidence rate -> 93.62322302801071
+
+Text ->  I am in love with the food over there at Haryana 
+Predicted emotion ->  joy
+Confidence rate -> 52.93214651456225
+
+Text ->  I got furious at my PG owner for not letting my friend in
+Predicted emotion ->  anger
+Confidence rate -> 93.62322302801071
+
+Text ->  I got furious at my PG owner for not letting my friend in
+Predicted emotion ->  anger
+Confidence rate -> 93.62322302801071
+
+Text ->  I got furious at my PG owner for not letting my friend in
+Predicted emotion ->  anger
+Confidence rate -> 93.62322302801071
+
+Text ->  I woke up early today and was very productive
+Predicted emotion ->  joy
+Confidence rate -> 97.17438911009434
+
+Text ->  I woke up early today and was very productive
+Predicted emotion ->  joy
+Confidence rate -> 97.17438911009434
+
+Text ->  I got furious at my PG owner for not letting my friend in
+Predicted emotion ->  anger
+Confidence rate -> 93.62322302801071
+
+Text ->  I am in love with the food over there at Haryana 
+Predicted emotion ->  joy
+Confidence rate -> 52.93214651456225
+
+Text ->  I am in love with the food over there at Haryana 
+Predicted emotion ->  joy
+Confidence rate -> 52.93214651456225
+
+Text ->  I woke up early today and was vert productive
+Predicted emotion ->  joy
+Confidence rate -> 97.17438911009434
+
+Text ->  I am in love with the food over there at Haryana 
+Predicted emotion ->  joy
+Confidence rate -> 52.93214651456225
+
+Text ->  
+Predicted emotion ->  anger
+Confidence rate -> 40.0
+
+Text ->  I woke up early today and was vert productive
+Predicted emotion ->  joy
+Confidence rate -> 97.17438911009434
+

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <style>
+        /* CSS styles for the Pomodoro Timer */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6f0ff; /* Blue background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff; /* White container background */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Drop shadow */
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #3498DB; /* Updated blue color */
+            margin-bottom: 20px;
+        }
+
+        .time_box {
+            background: linear-gradient(to bottom, #3498DB, #2980B9); /* Updated gradient background */
+            color: #fff; /* White text color */
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            font-size: 36px;
+            margin: 0 auto 20px;
+        }
+
+        button {
+            background-color: #3498DB; /* Updated blue button background */
+            color: #fff; /* White text color */
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2980B9; /* Darker blue on hover */
+        }
+
+        .mode_buttons {
+            margin-top: 20px;
+        }
+
+        .mode_buttons button.active {
+            background-color: #2980B9; /* Darker blue for active mode */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pomodoro Timer</h1>
+        <div class="time_box" id="time">25:00</div>
+        <div>
+            <button id="start">Start</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+        </div>
+        <div class="mode_buttons">
+            <button id="short_break" class="active">Short Break</button>
+            <button id="focus">Focus</button>
+            <button id="long_break">Long Break</button>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript functionality for the Pomodoro Timer
+
+        // Timer variables
+        let minutes = 25;
+        let seconds = 0;
+        let timerInterval;
+
+        // Functions to display time
+        const displayTime = () => {
+            const timeDisplay = document.getElementById('time');
+            timeDisplay.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        };
+
+        // Start timer function
+        const startTimer = () => {
+            timerInterval = setInterval(() => {
+                if (seconds === 0) {
+                    if (minutes === 0) {
+                        clearInterval(timerInterval);
+                        return;
+                    }
+                    minutes--;
+                    seconds = 59;
+                } else {
+                    seconds--;
+                }
+                displayTime();
+            }, 1000);
+        };
+
+        // Pause timer function
+        const pauseTimer = () => {
+            clearInterval(timerInterval);
+        };
+
+        // Reset timer function
+        const resetTimer = () => {
+            clearInterval(timerInterval);
+            minutes = 25;
+            seconds = 0;
+            displayTime();
+        };
+
+        // Event listeners for buttons
+        document.getElementById('start').addEventListener('click', startTimer);
+        document.getElementById('pause').addEventListener('click', pauseTimer);
+        document.getElementById('reset').addEventListener('click', resetTimer);
+
+        // Mode buttons functionality
+        const modeButtons = document.querySelectorAll('.mode_buttons button');
+        modeButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                modeButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                switch (button.id) {
+                    case 'short_break':
+                        minutes = 5;
+                        break;
+                    case 'focus':
+                        minutes = 25;
+                        break;
+                    case 'long_break':
+                        minutes = 15;
+                        break;
+                }
+                seconds = 0;
+                displayTime();
+            });
+        });
+
+        // Initial display of timer
+        displayTime();
+    </script>
+</body>
+</html>

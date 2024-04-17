@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADHD Quiz</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Custom styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .quiz-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #3498DB;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .custom-range {
+            width: 100%;
+        }
+
+        .custom-range-labels {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .custom-range-labels span {
+            flex: 1;
+            text-align: center;
+            cursor: pointer;
+            color: #555;
+        }
+
+        .highlight {
+            background-color: #f0f0f0;
+        }
+
+        .btn-primary {
+            font-size: 20px;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        #result {
+            margin-top: 30px;
+        }
+
+        #score {
+            font-size: 18px;
+            color: #555;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div id="quiz" class="container quiz-container">
+    <h1>ADHD Quiz</h1>
+    <div id="question1" class="question">
+        <h2>Question 1</h2>
+        <h3>Do you find yourself getting frustrated by not being able to relax even when you make time for it?</h3>
+        <input type="range" class="custom-range" min="0" max="2" step="1" value="0" id="q1" oninput="updateLabel('q1')">
+        <div class="custom-range-labels">
+            <span id="label-q1-no" onclick="moveSlider('q1', 0)">No</span>
+            <span id="label-q1-maybe" onclick="moveSlider('q1', 1)">Maybe</span>
+            <span id="label-q1-yes" onclick="moveSlider('q1', 2)">Yes</span>
+        </div>
+        <button class="btn btn-primary" onclick="nextQuestion('question1')">Next</button>
+    </div>
+  
+    <!-- Question 2 -->
+    <div id="question2" class="question" style="display:none;">
+        <h2>Question 2</h2>
+        <h3>Do you find yourself zoning in and out of conversations?</h3>
+        <input type="range" class="custom-range" min="0" max="2" step="1" value="0" id="q2" oninput="updateLabel('q2')">
+        <div class="custom-range-labels">
+            <span id="label-q2-no" onclick="moveSlider('q2', 0)">No</span>
+            <span id="label-q2-maybe" onclick="moveSlider('q2', 1)">Maybe</span>
+            <span id="label-q2-yes" onclick="moveSlider('q2', 2)">Yes</span>
+        </div>
+        <button class="btn btn-primary" onclick="nextQuestion('question2')">Next</button>
+    </div>
+  
+    <!-- Question 3 -->
+    <div id="question3" class="question" style="display:none;">
+        <h2>Question 3</h2>
+        <h3>Are you constantly misplacing things? Thinking you put them one place and finding them in another?</h3>
+        <input type="range" class="custom-range" min="0" max="2" step="1" value="0" id="q3" oninput="updateLabel('q3')">
+        <div class="custom-range-labels">
+            <span id="label-q3-no" onclick="moveSlider('q3', 0)">No</span>
+            <span id="label-q3-maybe" onclick="moveSlider('q3', 1)">Maybe</span>
+            <span id="label-q3-yes" onclick="moveSlider('q3', 2)">Yes</span>
+        </div>
+        <button class="btn btn-primary" onclick="nextQuestion('question3')">Next</button>
+    </div>
+  
+    <!-- Question 4 -->
+    <div id="question4" class="question" style="display:none;">
+        <h2>Question 4</h2>
+        <h3>Do many people comment that you are weird or random?</h3>
+        <input type="range" class="custom-range" min="0" max="2" step="1" value="0" id="q4" oninput="updateLabel('q4')">
+        <div class="custom-range-labels">
+            <span id="label-q4-no" onclick="moveSlider('q4', 0)">No</span>
+            <span id="label-q4-maybe" onclick="moveSlider('q4', 1)">Maybe</span>
+            <span id="label-q4-yes" onclick="moveSlider('q4', 2)">Yes</span>
+        </div>
+        <button class="btn btn-primary" onclick="nextQuestion('question4')">Next</button>
+    </div>
+  
+    <!-- Question 5 -->
+    <div id="question5" class="question" style="display:none;">
+        <h2>Question 5</h2>
+        <h3>Do you struggle to stop yourself talking even when you know you shouldn’t?</h3>
+        <input type="range" class="custom-range" min="0" max="2" step="1" value="0" id="q5" oninput="updateLabel('q5')">
+        <div class="custom-range-labels">
+            <span id="label-q5-no" onclick="moveSlider('q5', 0)">No</span>
+            <span id="label-q5-maybe" onclick="moveSlider('q5', 1)">Maybe</span>
+            <span id="label-q5-yes" onclick="moveSlider('q5', 2)">Yes</span>
+        </div>
+        <button class="btn btn-primary" onclick="nextQuestion('question5')">Next</button>
+    </div>
+  
+    <!-- Question 6 -->
+    <div id="question6" class="question" style="display:none;">
+        <h2>Question 6</h2>
+        <h3>Do you get overwhelmed when faced with lots of choices?</h3>
+        <input type="range" class="custom-range" min="0" max="2" step="1" value="0" id="q6" oninput="updateLabel('q6')">
+        <div class="custom-range-labels">
+            <span id="label-q6-no" onclick="moveSlider('q6', 0)">No</span>
+            <span id="label-q6-maybe" onclick="moveSlider('q6', 1)">Maybe</span>
+            <span id="label-q6-yes" onclick="moveSlider('q6', 2)">Yes</span>
+        </div>
+        <button class="btn btn-primary" onclick="nextQuestion('question6')">Next</button>
+    </div>
+  
+    <!-- Question 7 -->
+    <div id="question7" class="question" style="display:none;">
+        <h2>Question 7</h2>
+        <h3>Do you often feel restless or find it hard to sit still?</h3>
+        <input type="range" class="custom-range" min="0" max="2" step="1" value="0" id="q7" oninput="updateLabel('q7')">
+        <div class="custom-range-labels">
+            <span id="label-q7-no" onclick="moveSlider('q7', 0)">No</span>
+            <span id="label-q7-maybe" onclick="moveSlider('q7', 1)">Maybe</span>
+            <span id="label-q7-yes" onclick="moveSlider('q7', 2)">Yes</span>
+        </div>
+        <button class="btn btn-primary" onclick="nextQuestion('question7')">Next</button>
+    </div>
+  
+    <!-- Question 8 -->
+    <div id="question8" class="question" style="display:none;">
+        <h2>Question 8</h2>
+        <h3>Do you find it difficult to organize tasks and activities?</h3>
+        <input type="range" class="custom-range" min="0" max="2" step="1" value="0" id="q8" oninput="updateLabel('q8')">
+        <div class="custom-range-labels">
+            <span id="label-q8-no" onclick="moveSlider('q8', 0)">No</span>
+            <span id="label-q8-maybe" onclick="moveSlider('q8', 1)">Maybe</span>
+            <span id="label-q8-yes" onclick="moveSlider('q8', 2)">Yes</span>
+        </div>
+        <button class="btn btn-primary" onclick="nextQuestion('question8')">Next</button>
+    </div>
+  
+    <!-- Question 9 -->
+    <div id="question9" class="question" style="display:none;">
+        <h2>Question 9</h2>
+        <h3>Do you often interrupt others when they are busy?</h3>
+        <input type="range" class="custom-range" min="0" max="2" step="1" value="0" id="q9" oninput="updateLabel('q9')">
+        <div class="custom-range-labels">
+            <span id="label-q9-no" onclick="moveSlider('q9', 0)">No</span>
+            <span id="label-q9-maybe" onclick="moveSlider('q9', 1)">Maybe</span>
+            <span id="label-q9-yes" onclick="moveSlider('q9', 2)">Yes</span>
+        </div>
+        <button class="btn btn-primary" onclick="nextQuestion('question9')">Next</button>
+    </div>
+  
+    <!-- Question 10 -->
+    <div id="question10" class="question" style="display:none;">
+        <h2>Question 10</h2>
+        <h3>Do you struggle to follow through on instructions and finish tasks?</h3>
+        <input type="range" class="custom-range" min="0" max="2" step="1" value="0" id="q10" oninput="updateLabel('q10')">
+        <div class="custom-range-labels">
+            <span id="label-q10-no" onclick="moveSlider('q10', 0)">No</span>
+            <span id="label-q10-maybe" onclick="moveSlider('q10', 1)">Maybe</span>
+            <span id="label-q10-yes" onclick="moveSlider('q10', 2)">Yes</span>
+        </div>
+        <button class="btn btn-primary" onclick="nextQuestion('question10')">Next</button>
+    </div>
+
+    <!-- Result display -->
+    <div id="result" style="display:none;">
+        <h2>Your Result:</h2>
+        <p id="score"></p>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    var currentQuestion = 1;
+    var totalQuestions = 10;
+
+    function nextQuestion(currentId) {
+        var currentElement = document.getElementById(currentId);
+        currentElement.style.display = "none";
+        
+        currentQuestion++;
+        if (currentQuestion <= totalQuestions) {
+            var nextId = "question" + currentQuestion;
+            var nextElement = document.getElementById(nextId);
+            nextElement.style.display = "block";
+        } else {
+            calculateScore();
+        }
+    }
+
+    function calculateScore() {
+        var score = 0;
+        for (var i = 1; i <= totalQuestions; i++) {
+            var sliderValue = parseInt(document.getElementById("q" + i).value);
+            score += sliderValue;
+        }
+        displayResult(score);
+    }
+
+    function displayResult(score) {
+        var resultElement = document.getElementById("result");
+        var scoreElement = document.getElementById("score");
+
+        resultElement.style.display = "block";
+        if (score >= 10) {
+            scoreElement.innerText = "Based on your responses, you might have symptoms consistent with ADHD. Please consult a healthcare professional for a proper evaluation.";
+        } else {
+            scoreElement.innerText = "Based on your responses, it's less likely that you have symptoms consistent with ADHD. However, it's essential to consult a healthcare professional for a proper evaluation if you have concerns.";
+        }
+    }
+
+    function updateLabel(sliderId) {
+        var slider = document.getElementById(sliderId);
+        var labelNo = document.getElementById("label-" + sliderId + "-no");
+        var labelMaybe = document.getElementById("label-" + sliderId + "-maybe");
+        var labelYes = document.getElementById("label-" + sliderId + "-yes");
+
+        if (slider.value == 0) {
+            labelNo.classList.add("highlight");
+            labelMaybe.classList.remove("highlight");
+            labelYes.classList.remove("highlight");
+        } else if (slider.value == 1) {
+            labelNo.classList.remove("highlight");
+            labelMaybe.classList.add("highlight");
+            labelYes.classList.remove("highlight");
+        } else {
+            labelNo.classList.remove("highlight");
+            labelMaybe.classList.remove("highlight");
+            labelYes.classList.add("highlight");
+        }
+    }
+
+    function moveSlider(sliderId, value) {
+        var slider = document.getElementById(sliderId);
+        slider.value = value;
+        updateLabel(sliderId);
+    }
+</script>
+
+</body>
+</html>

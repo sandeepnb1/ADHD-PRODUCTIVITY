@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/x-icon" href="../logo.jpeg" />
+    <title> PREDICTED MOOD </title>
+    <style type="text/css">
+        body {
+            background-color: #3498DB; /* Background color */
+            padding-right: 100px;
+            padding-left: 100px;
+            font-size: 30px;
+            color: white; /* Text color */
+        }
+
+        h1 {
+            background-color: rgba(255, 165, 89, 0.8); /* Orange color */
+            color: white;
+            text-align: center;
+            border-radius: 20px;
+            padding-bottom: 20px;
+        }
+
+        .container {
+            background-color: white; /* White container background */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Drop shadow */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .bottom {
+            background-color: rgba(255, 165, 89, 0.8); /* Orange color */
+            padding-left: 5%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            padding-right: 5%;
+            border: solid;
+        }
+
+        .first, .second, .third {
+            background-color: #2980B9; /* Blue color */
+            text-align: center;
+            border-radius: 27px;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            margin-top: 10px; /* Adjusted margin */
+        }
+
+        a {
+            color: white; /* White text color for links */
+            text-decoration: none;
+        }
+
+        #answer {
+            width: 800px;
+            height: 75px;
+            text-align: center;
+            text-decoration-style: dashed;
+            font-size: 30px;
+            background-color: rgba(255, 165, 89, 0.8); /* Orange color */
+            border-radius: 10px;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+
+        #image {
+            font-size: 145px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="find">
+         THIS IS YOUR MOOD   <br>
+        <input type="text" id="answer" value="{{output}}" readonly="text">
+    </h1>
+
+    <div id="image">
+    </div>
+
+    <nav class="bottom">
+        <div class="third">
+            <a href="http://127.0.0.1:5000/details" id="details">Details about Prediction</a>
+        </div>
+        <div class="second">
+            <a href="http://127.0.0.1:5000/getrecom" id="getrecom"> Get Recommendation</a>
+        </div>
+        <div class="first">
+            <a href="http://127.0.0.1:5000/moreinfo" id="morein" > More Info</a>
+        </div>
+    </nav>
+
+    <script>
+        var predict = document.getElementById("answer").value;
+
+        if (predict.includes("joy") == true) {
+            document.getElementById("image").innerHTML = "&#128515;";
+            window.localStorage.setItem("answer", "joy");
+        } else if (predict.includes("sadness") == true) {
+            document.getElementById("image").innerHTML = "&#128531;";
+            window.localStorage.setItem("answer", "sadness");
+        } else if (predict.includes("anger") == true) {
+            document.getElementById("image").innerHTML = "&#128544;";
+            window.localStorage.setItem("answer", "anger");
+        } else if (predict.includes("fear") == true) {
+            document.getElementById("image").innerHTML = "&#128552;";
+            window.localStorage.setItem("answer", "fear");
+        } else if (predict.includes("love") == true) {
+            document.getElementById("image").innerHTML = "&#128536;";
+            window.localStorage.setItem("answer", "love");
+        } else if (predict.includes("surprise") == true) {
+            document.getElementById("image").innerHTML = "&#128558;";
+            window.localStorage.setItem("answer", "surprise");
+        }
+    </script>
+</body>
+</html>
