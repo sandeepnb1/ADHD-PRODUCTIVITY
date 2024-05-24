@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            padding: 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 50%; /* Make buttons circular */
+            width: 100px; /* Set width and height for larger buttons */
+            height: 100px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Meditate</h1>
+        <div class="buttons">
+            <button id="joy">Joy</button>
+            <button id="sadness">Sadness</button>
+            <button id="anger">Anger</button>
+            <button id="fear">Fear</button>
+            <button id="love">Love</button>
+        </div>
+    </div>
+
+    <script>
+        const joySound = new Audio('joy_sound.mp3'); // Change the file name to your actual sound file
+        const sadnessSound = new Audio('sadness_sound.mp3'); // Change the file name to your actual sound file
+        const angerSound = new Audio('anger_sound.mp3'); // Change the file name to your actual sound file
+        const fearSound = new Audio('fear_sound.mp3'); // Change the file name to your actual sound file
+        const loveSound = new Audio('love_sound.mp3'); // Change the file name to your actual sound file
+
+        // Flags to track the state of each sound
+        let joyPlaying = false;
+        let sadnessPlaying = false;
+        let angerPlaying = false;
+        let fearPlaying = false;
+        let lovePlaying = false;
+
+        function togglePlay(sound, isPlaying) {
+            if (isPlaying) {
+                sound.pause();
+                sound.currentTime = 0; // Reset currentTime to 0
+            } else {
+                sound.play();
+            }
+        }
+
+        document.getElementById('joy').addEventListener('click', () => {
+            togglePlay(joySound, joyPlaying);
+            joyPlaying = !joyPlaying;
+        });
+
+        document.getElementById('sadness').addEventListener('click', () => {
+            togglePlay(sadnessSound, sadnessPlaying);
+            sadnessPlaying = !sadnessPlaying;
+        });
+
+        document.getElementById('anger').addEventListener('click', () => {
+            togglePlay(angerSound, angerPlaying);
+            angerPlaying = !angerPlaying;
+        });
+
+        document.getElementById('fear').addEventListener('click', () => {
+            togglePlay(fearSound, fearPlaying);
+            fearPlaying = !fearPlaying;
+        });
+
+        document.getElementById('love').addEventListener('click', () => {
+            togglePlay(loveSound, lovePlaying);
+            lovePlaying = !lovePlaying;
+        });
+    </script>
+</body>
+</html>
